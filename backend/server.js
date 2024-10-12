@@ -69,7 +69,7 @@ router.get('/api/items', async (ctx, next) => {
         .filter(o => o.title.toLowerCase().includes(q) || o.color.toLowerCase() === q)
         .slice(offset, offset + moreCount)
         .map(itemBasicMapper);
-
+        console.log(filtered);
     return fortune(ctx, filtered);
 });
 
