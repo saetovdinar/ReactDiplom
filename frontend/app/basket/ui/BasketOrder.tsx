@@ -42,7 +42,7 @@ export default function BasketOrder() {
   return (
     <>
       {load ? (
-        <Preloader />
+        <Preloader style={{}} />
       ) : (
         <section className="order">
           <h2 className="text-center">Оформить заказ</h2>
