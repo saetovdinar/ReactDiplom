@@ -59,7 +59,7 @@ router.get('/api/categories', async (ctx, next) => {
 
 router.get('/api/items', async (ctx, next) => {
     const { query } = ctx.request;
-
+    console.log(query);
     const categoryId = query.categoryId === undefined ? 0 : Number(query.categoryId);
     const offset = query.offset === undefined ? 0 : Number(query.offset);
     const q = query.q === undefined ? '' : query.q.trim().toLowerCase();
@@ -76,6 +76,7 @@ router.get('/api/items', async (ctx, next) => {
 router.get('/api/items/:id', async (ctx, next) => {
     const id = Number(ctx.params.id);
     const item = items.find(o => o.id === id);
+
     if (item === undefined) {
         return fortune(ctx, 'Not found', 404);
     }
