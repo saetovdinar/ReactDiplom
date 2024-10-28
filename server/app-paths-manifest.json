@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/404/page": "app/404/page.js",
+  "/basket/page": "app/basket/page.js",
+  "/contacts/page": "app/contacts/page.js",
+  "/goodscatalogue/page": "app/goodscatalogue/page.js",
+  "/info/page": "app/info/page.js",
+  "/page": "app/page.js",
+  "/products/page": "app/products/page.js",
+  "/success/page": "app/success/page.js"
+}
