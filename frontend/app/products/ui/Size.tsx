@@ -15,11 +15,7 @@ export default function Size({
     : 'catalog-item-size';
 
   const clickHandler = () => {
-    if (isSelected) {
-      dispatch(setIsSelectedSlice(false));
-    } else {
-      dispatch(setIsSelectedSlice(true));
-    }
+    dispatch(setIsSelectedSlice(!isSelected));
     setIsSelected(!isSelected);
     dispatch(setSize(children));
   };
